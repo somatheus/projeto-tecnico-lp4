@@ -37,13 +37,16 @@ $tipo = $_GET['tipo'] ?? null;
                 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Página inicial <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="entrar.html" tabindex="-1" aria-disabled="true">Entrar</a>
-                    </li>
-                        <a class="btn btn-outline-light" href="#">Cadastrar</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.php">Página inicial <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" id="projeto" href="/html/projeto.php">Projeto</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="entrar.html" tabindex="-1" aria-disabled="true">Entrar</a>
+                        </li>
+                            <a class="btn btn-outline-light" href="#">Cadastrar</a>
                     </ul>
                 </div>
             </nav>

@@ -17,7 +17,9 @@ if (!isset($_SESSION['leitor'])){
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Página inicial <span class="sr-only">(current)</span></a>
                 </li>
-                
+                <li class="nav-item active">
+                    <a class="nav-link" id="projeto" href="/html/projeto.php">Projeto</a>
+                </li>
                 <?php if(isset($_SESSION['leitor'])){?>
                     <li class="nav-item active">
                         <span class="nav-link"><?=$_SESSION['leitorNome']?></span>
@@ -26,17 +28,15 @@ if (!isset($_SESSION['leitor'])){
                         <a href="../php/sair-sessao.php" class="btn btn-outline-light">Sair</a>
                     </li>
                 <?php } else{ ?>
-
                     <li class="nav-item active">
                         <a class="nav-link" id="entrar" href="/html/entrar.html" tabindex="-1" aria-disabled="true">Entrar</a>
                     </li>
-
                 <?php } ?>
 
                 <?php if (!isset($_SESSION['leitor'])){?>
                     <a class="btn btn-outline-light" id="cadastrar" href="/html/cadastrar.php">Cadastrar</a>
                 <?php } ?>
-                </ul>
+            </ul>
         </div>
     </nav>
 </div>
